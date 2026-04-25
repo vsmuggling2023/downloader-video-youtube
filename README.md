@@ -2,7 +2,7 @@
 
 Un descargador de YouTube completo con soporte para videos individuales, playlists y múltiples formatos. 
 
-## 🚀 Características
+## Características
 
 - **Videos individuales** - Descarga cualquier video de YouTube
 - **Playlists completas** - Descarga todas las canciones/videos de una playlist
@@ -13,7 +13,7 @@ Un descargador de YouTube completo con soporte para videos individuales, playlis
 - **Progreso en tiempo real** - Muestra velocidad y porcentaje de descarga
 - **Loop continuo** - Pregunta si quieres descargar otro video
 
-## 📋 Requisitos
+## Requisitos
 
 - Python 3.8+
 - FFmpeg (recomendado para conversión de codecs)
@@ -50,7 +50,7 @@ Un descargador de YouTube completo con soporte para videos individuales, playlis
    sudo apt install ffmpeg
    ```
 
-## 💻 Uso
+## Uso
 
 ### Ejecutar el descargador
 
@@ -74,24 +74,24 @@ python yt_downloader.py
 
 ```
 ==================================================
-🎬 Descargador de YouTube (yt-dlp)
+Descargador de YouTube (yt-dlp)
 ==================================================
 
-🔗 URL de YouTube: https://www.youtube.com/watch?v=example
+URL de YouTube: https://www.youtube.com/watch?v=example
 
-📋 Tipo de contenido:
+Tipo de contenido:
   1. Video individual
   2. Playlist
 
 Selecciona (1 o 2): 1
 
-💾 Formato:
+Formato:
   1. Video
   2. Solo audio (MP3)
 
 Selecciona (1 o 2): 1
 
-📊 Calidades disponibles:
+Calidades disponibles:
    (Las marcadas con ⚠️ requieren conversión a H.264 para Sony Vegas)
   1. 360p (mp4) - 41.5 MB [✓ compatible Vegas]
   2. 1080p (mp4) - 150.3 MB [✓ compatible Vegas]
@@ -100,20 +100,9 @@ Selecciona (1 o 2): 1
 
 Selecciona número de calidad: 4
 
-📥 Descargando video (FFmpeg convertirá a H.264 para compatibilidad con Vegas)...
-✅ Completado: Nombre del video
+ Descargando video (FFmpeg convertirá a H.264 para compatibilidad con Vegas)...
+ Completado: Nombre del video
 ```
-
-## 🎥 Compatibilidad con Editores de Video
-
-### Sony Vegas / Adobe Premiere
-
-El programa automáticamente:
-- Detecta si el video usa VP9/AV1 (incompatible con editores)
-- Convierte a H.264 usando FFmpeg
-- Muestra iconos de compatibilidad:
-  - `✓ compatible Vegas` = H.264 nativo
-  - `⚠️ requiere conversión` = Se convertirá automáticamente
 
 ### Formatos de salida
 
@@ -121,7 +110,7 @@ El programa automáticamente:
 - **Audio**: MP3 a 192kbps
 - **4K/8K**: Convierte automáticamente a H.264 para compatibilidad
 
-## 📁 Estructura de archivos
+## Estructura de archivos
 
 ```
 yt-downloader/
@@ -131,16 +120,16 @@ yt-downloader/
 └── playlist_[nombre]/   # Carpetas de playlists (creadas automáticamente)
 ```
 
-## ⚠️ Solución de problemas
+## Solución de problemas
 
 ### Videos bloqueados por copyright
 
 ```
-⚠️ Video bloqueado (copyright): [URL]
+ Video bloqueado (copyright): [URL]
 ```
 
 **Soluciones:**
-- El programa salta automáticamente videos bloqueados en playlists
+- El programa salta automáticamente videos bloqueados en playlists, descarga el video con la URL
 - Para videos individuales, intenta usar VPN
 - Algunos videos simplemente no están disponibles
 
@@ -175,7 +164,7 @@ ERROR: [youtube] Unable to download webpage
 - Intenta con una VPN si el video está geo-bloqueado
 - Espera unos minutos e intenta de nuevo
 
-## 🔄 Actualización
+## Actualización
 
 Para mantener yt-dlp actualizado:
 
@@ -183,30 +172,17 @@ Para mantener yt-dlp actualizado:
 pip install --upgrade yt-dlp
 ```
 
-## 📝 Notas importantes
+## Notas importantes
 
 - **Videos 4K/8K**: YouTube los sirve en VP9, se convierten a H.264
 - **Playlists**: Se crea una carpeta automáticamente con el nombre de la playlist
 - **Videos privados/bloqueados**: Se saltan automáticamente en playlists
 - **Conversión**: Requiere FFmpeg para convertir codecs incompatibles
 
-## 🛡️ Legal
+## Legal
 
 Este software es solo para uso personal y educativo. Respeta los derechos de autor y los términos de servicio de YouTube. No es responsable del mal uso del software.
 
-## 🤝 Contribuciones
-
-¡Contribuciones bienvenidas! Por favor:
-1. Fork el proyecto
-2. Crea un feature branch
-3. Commit tus cambios
-4. Push al branch
-5. Crea un Pull Request
-
-## 📄 Licencia
-
-MIT License - Ver archivo LICENSE para detalles
-
 ---
 
-**Creado con ❤️ usando yt-dlp**
+**Creado usando yt-dlp**
