@@ -19,7 +19,7 @@ Un descargador de YouTube completo con soporte para videos individuales, playlis
 - FFmpeg (recomendado para conversión de codecs)
 - yt-dlp
 
-## 🛠️ Instalación
+## Instalación
 
 1. **Clonar o descargar el proyecto**
    ```bash
